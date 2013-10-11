@@ -19,7 +19,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'activesupport', '~> 3.2'
   gem.add_dependency 'sidekiq', '~> 2.3.2'
-  gem.add_dependency 'aws-sdk', '~> 1.6.6'
+  gem.add_dependency 'aws-sdk', '~> 1.21'
 
   gem.add_development_dependency 'rspec'
   gem.add_development_dependency 'rb-fsevent', '~> 0.9.1'
