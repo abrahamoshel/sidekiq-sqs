@@ -7,7 +7,6 @@ require 'sidekiq-sqs/fetcher'
 require 'sidekiq-sqs/client'
 require 'sidekiq-sqs/processor'
 require 'sidekiq-sqs/worker'
-require 'sidekiq-sqs/aws-sdk/batch_send_failure_patch'
 
 # TODO The retry server middleware directly writes to a retry zset.
 # TODO Need a queue-prefix option to support multiple rails envs
