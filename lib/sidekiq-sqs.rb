@@ -26,7 +26,6 @@ module Sidekiq
       Sidekiq::Client.send :include, Sidekiq::Sqs::Client
       Sidekiq::Processor.send :include, Sidekiq::Sqs::Processor
       Sidekiq::Worker::ClassMethods.send :include, Sidekiq::Sqs::Worker
-      AWS::SQS::Queue.send :include, Sidekiq::Sqs::AwsSdk::BatchSendFailurePatch
 
       # Can't figure how to include/extend and not get a private method...
       def Sidekiq.sqs
